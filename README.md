@@ -1,6 +1,8 @@
-# NPO Template Merged
+# Wells of Life
+A platform for [Wells of Life](https://www.wellsoflife.org/) staff to track new and restored wells through per-well checklists, gifts and donors synced from Virtuous, donor communication, and an internal audit log.
 
-A simple React, Vite, and Node.js monorepo built with Yarn workspaces. Uses Firebase for authentication, Chakra UI for components, and your choice of database (i.e. Postgres).
+
+Project is based on a simple React, Vite, and Node.js monorepo built with Yarn workspaces. Uses Firebase for authentication, Chakra UI for components, and Postgres.
 
 ## Getting Started
 
