@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS donors (
   phone TEXT NULL,
   address TEXT NULL,
   date_created TIMESTAMP NOT NULL,
-  created_by BIGINT NULL REFERENCES public.users(id) -- public.users or well_users?
+  created_by BIGINT NULL REFERENCES wells_user(id)
 );
 
 TABLESPACE pg_default;
