@@ -1,4 +1,4 @@
-CREATE TABLE well_editors (
+CREATE TABLE IF NOT EXISTS well_editors (
   well_id BIGINT NOT NULL,
   user_id TEXT NOT NULL,
   assigned_by TEXT NOT NULL,
