@@ -1,15 +1,15 @@
 -- Table: donors
 
 CREATE TABLE IF NOT EXISTS donors (
-  donor_id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
-  virtuous_id VARCHAR(70) UNIQUE NOT NULL,
-  donor_name TEXT NOT NULL,
-  email TEXT NULL, 
-  phone TEXT NULL,
-  address TEXT NULL,
-  date_created TIMESTAMP NOT NULL,
-  created_by BIGINT NULL REFERENCES wells_user(id)
-);
+    id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    virtuous_id VARCHAR(70) UNIQUE NOT NULL,
+    donor_name TEXT NOT NULL,
+    email TEXT NULL, 
+    phone TEXT NULL,
+    address TEXT NULL,
+    date_created TIMESTAMP NOT NULL,
+    created_by BIGINT NULL REFERENCES wells_user(id)    -- used wells_user instead of public.users
+)
 
 TABLESPACE pg_default;
 
