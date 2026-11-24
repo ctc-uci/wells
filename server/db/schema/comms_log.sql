@@ -7,7 +7,7 @@ CREATE TYPE comms_log_status AS ENUM('Sent', 'Completed');
 
 
 
-CREATE TABLE IF NOT EXISTS comms_log 
+CREATE TABLE comms_log 
 (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     donor BIGINT NOT NULL,
