@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS well_editors (
   well_id BIGINT NOT NULL,
   user_id TEXT NOT NULL,
   assigned_by TEXT NOT NULL,
-  date_created TIMESTAMP NOT NULL,
+  date_created TIMESTAMP NOT NULL DEFAULT now(),
 
   PRIMARY KEY(well_id, user_id),
   
