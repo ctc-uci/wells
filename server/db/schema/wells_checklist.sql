@@ -1,17 +1,3 @@
--- dummy tables for FK dependencies
-CREATE TABLE IF NOT EXISTS wells_tracker (
-  id BIGINT PRIMARY KEY
-);
-
-CREATE TABLE IF NOT EXISTS checklist_templates (
-  id BIGINT PRIMARY KEY
-);
-
-CREATE TABLE IF NOT EXISTS wells_user (
-  id BIGINT PRIMARY KEY
-);
-
--- wells_checklist schema
 CREATE TYPE checklist_status AS ENUM ('Pending', 'Completed', 'Skipped');
 
 CREATE TABLE wells_checklist (
