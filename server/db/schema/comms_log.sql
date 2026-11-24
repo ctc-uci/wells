@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS comms_log CASCADE;
+DROP TYPE IF EXISTS comms_log_step;
+DROP TYPE IF EXISTS comms_log_status;
+
 CREATE TYPE comms_log_step AS ENUM('Initial', 'Follow-Up', 'Plaque');
 CREATE TYPE comms_log_status AS ENUM('Sent', 'Completed');
 
