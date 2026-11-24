@@ -25,6 +25,7 @@ CREATE TABLE wells_checklist (
   completed_by BIGINT,
   note TEXT,
   date_created TIMESTAMP NOT NULL,
+  CHECK (status <> 'Completed' OR (completed_at IS NOT NULL AND completed_by IS NOT NULL)),
 
   FOREIGN KEY (well_id)
     REFERENCES wells_tracker(id),
