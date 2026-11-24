@@ -18,6 +18,7 @@ CREATE TABLE wells_checklist (
   id BIGSERIAL PRIMARY KEY,
   well_id BIGINT NOT NULL,
   template_id BIGINT NOT NULL,
+  UNIQUE (well_id, template_id),
   step_order INT NOT NULL,
   status checklist_status NOT NULL,
   completed_at TIMESTAMP,
