@@ -12,5 +12,6 @@ CREATE TABLE checklist_templates (
     step_order INT NOT NULL,
     label VARCHAR(200) NOT NULL,
     active BOOLEAN NOT NULL DEFAULT TRUE,
-    UNIQUE (program_type, step_key)
+    UNIQUE (program_type, step_key),
+    UNIQUE (program_type, step_order)
 );
